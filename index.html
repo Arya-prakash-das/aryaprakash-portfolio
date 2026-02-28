@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Arya Prakash Das | Digital Marketer | Backend Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,6 +16,7 @@
 <header>
     <nav>
         <h1 class="logo">Arya.</h1>
+
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -20,19 +25,30 @@
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="toggle">
+            <i class="fas fa-moon"></i>
+        </div>
     </nav>
 
     <div class="hero reveal">
         <h2>Hi, I'm <span>Arya Prakash Das</span></h2>
-        <p>Digital Marketer | Backend Developer | FastAPI</p>
+        <h3 class="typing"></h3>
+
         <a href="Aryaprakash_Das_Resume.pdf" class="btn" download>Download Resume</a>
+
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/arya-prakash-das" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Arya-prakash-das" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:aryaprakashdas815@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </div>
 </header>
 
 <section id="about" class="section reveal">
     <h2>About Me</h2>
     <p>
-        Computer Science undergraduate specializing in backend development, and scalable API systems using FastAPI and SQL.
+        Computer Science undergraduate specializing in backend development and scalable API systems using FastAPI and SQL.
         Passionate about building production-grade software and data-driven systems.
         With experience in digital marketing, I bring a unique blend of technical and strategic skills to drive impactful solutions.
     </p>
@@ -54,19 +70,22 @@
 
 <section id="experience" class="section reveal">
     <h2>Work Experience</h2>
+
     <div class="card">
         <h3>Affiliate Executive – Mobtions</h3>
-        <p>Managed and optimized multiple affiliate campaigns across Tier-1 geographies, tracking key KPIs including installs, conversion rate, and ROI.
-           Analyzed campaign performance using data-driven approaches to improve traffic quality and scaling decisions.
-           Worked with tracking tools like Appsflyer, Singular, Apptrove, Affise, Adjust and attribution concepts relevant to performance marketing ecosystems.
-           Contributed to performance strategy discussions, improving campaign efficiency and delivery timelines.</p>
+        <p>
+            Managed and optimized affiliate campaigns across Tier-1 geographies,
+            tracking KPIs like installs, conversion rate, and ROI.
+            Worked with Appsflyer, Singular, Affise, Adjust and attribution tools.
+        </p>
     </div>
+
     <div class="card">
         <h3>ML Intern – Indusnet Techshu</h3>
-        <p>Developed and deployed machine learning models for real-time traffic analysis and predictive modeling.
-           Implemented data preprocessing pipelines to improve model accuracy and performance.
-           Collaborated with cross-functional teams to optimize model scalability in production environments.
-           Gained hands-on experience in computer vision workflows and model evaluation techniques.</p>
+        <p>
+            Developed machine learning models for real-time traffic analysis.
+            Built preprocessing pipelines and optimized scalability in production environments.
+        </p>
     </div>
 </section>
 
@@ -75,26 +94,27 @@
 
     <div class="card">
         <h3>Analytics API (FastAPI + SQL + Docker)</h3>
-        <p> Built a scalable backend API using FastAPI for user and event analytics.  Implemented CRUD operations with SQLAlchemy ORM.
-            Designed modular project architecture with routers and database separation.  Added input validation and error handling for secure API responses.
-            Containerized the application using Docker for production deployment. </p>
+        <p>
+            Built a scalable backend API with modular architecture, CRUD operations,
+            input validation, and Docker-based deployment.
+        </p>
     </div>
 
     <div class="card">
         <h3>Real-Time Traffic Density Estimation (YOLOv8)</h3>
-        <p>Implemented YOLOv8 Nano for real-time vehicle detection and traffic monitoring.
-           Built end-to-end computer vision pipeline for object detection and density estimation.  
-           Optimized inference performance for near real-time processing.</p>
+        <p>
+            Implemented YOLOv8 Nano for vehicle detection and traffic monitoring.
+            Optimized inference for near real-time performance.
+        </p>
     </div>
 
     <div class="card">
         <h3>Predictive Maintenance System</h3>
-        <p>Developed machine learning models to predict equipment failure and reduce downtime.  
-           Performed feature engineering and data preprocessing to improve model performance.  
-           Evaluated multiple algorithms to select the optimal predictive model.
-</p>
+        <p>
+            Developed ML models to predict equipment failure.
+            Performed feature engineering and algorithm evaluation.
+        </p>
     </div>
-
 </section>
 
 <section id="certifications" class="section reveal">
@@ -110,9 +130,23 @@
 
 <section id="contact" class="section dark reveal">
     <h2>Contact</h2>
-    <p>Email: aryaprakashdas815@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/arya-prakash-das</p>
-    <p>Phone: 7609029625</p>
+
+    <div class="contact-cards">
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <p>aryaprakashdas815@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <p>linkedin.com/in/arya-prakash-das</p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <p>+91 76090 29625</p>
+        </div>
+    </div>
 </section>
 
 <footer>

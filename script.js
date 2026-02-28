@@ -1,34 +1,52 @@
-// Falling Leaves (subtle)
-function createLeaf() {
-    const leaf = document.createElement("div");
-    leaf.classList.add("leaf");
-    leaf.innerHTML = "🍃";
+// Typing Animation
+const roles = [
+    "Digital Marketer",
+    "Backend Developer",
+    "FastAPI Specialist",
+    "Machine Learning Enthusiast"
+];
 
-    leaf.style.left = Math.random() * window.innerWidth + "px";
-    leaf.style.animationDuration = 6 + Math.random() * 4 + "s";
-    leaf.style.opacity = Math.random();
+let index = 0;
+let charIndex = 0;
+let isDeleting = false;
 
-    document.body.appendChild(leaf);
+function typeEffect() {
+    const typing = document.querySelector(".typing");
+    const fullText = roles[index];
 
-    setTimeout(() => leaf.remove(), 10000);
+    if (!isDeleting) {
+        typing.textContent = fullText.substring(0, charIndex++);
+        if (charIndex > fullText.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, 1000);
+            return;
+        }
+    } else {
+        typing.textContent = fullText.substring(0, charIndex--);
+        if (charIndex < 0) {
+            isDeleting = false;
+            index = (index + 1) % roles.length;
+        }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 60 : 100);
 }
 
-setInterval(createLeaf, 800);
-
+typeEffect();
 
 // Scroll Reveal
 function revealOnScroll() {
-    const reveals = document.querySelectorAll(".reveal");
-
-    reveals.forEach((element) => {
-        const windowHeight = window.innerHeight;
-        const elementTop = element.getBoundingClientRect().top;
-
-        if (elementTop < windowHeight - 120) {
-            element.classList.add("active");
+    document.querySelectorAll(".reveal").forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+            el.classList.add("active");
         }
     });
 }
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
+
+// Dark / Light Toggle
+document.querySelector(".toggle").addEventListener("click", () => {
+    document.body.classList.toggle("light");
+});
