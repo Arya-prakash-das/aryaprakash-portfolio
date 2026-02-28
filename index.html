@@ -2,81 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Arya Prakash Das | Digital Marketer | Backend Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arya Prakash Das | Portfolio</title>
-
-    <!-- Correct CSS path -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Falling Leaves Animation -->
-    <div class="leaves"></div>
+<header>
+    <nav>
+        <h1 class="logo">Arya.</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <h1 class="logo">Arya.</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="hero reveal">
+        <h2>Hi, I'm <span>Arya Prakash Das</span></h2>
+        <p>Digital Marketer | Backend Developer | FastAPI</p>
+        <a href="Aryaprakash_Das_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+</header>
 
-        <!-- Hero Section -->
-        <div class="hero reveal">
-            <h2>Hi, I'm <span>Arya Prakash Das</span></h2>
-            <p>Backend Developer | FastAPI | Data Analytics | UI/UX Enthusiast</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
+<section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+        Computer Science undergraduate specializing in backend development, and scalable API systems using FastAPI and SQL.
+        Passionate about building production-grade software and data-driven systems.
+        With experience in digital marketing, I bring a unique blend of technical and strategic skills to drive impactful solutions.
+    </p>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="section reveal">
-        <h2>About Me</h2>
-        <p>
-            I build scalable backend systems using FastAPI and PostgreSQL.
-            Passionate about analytics, system design, and building real-world products.
-            Currently focused on building production-grade backend systems.
-        </p>
-    </section>
+<section id="skills" class="section dark reveal">
+    <h2>Technical Skills</h2>
+    <div class="grid">
+        <div class="card">Python</div>
+        <div class="card">FastAPI</div>
+        <div class="card">MySQL</div>
+        <div class="card">SQLite</div>
+        <div class="card">PostgreSQL</div>
+        <div class="card">Docker</div>
+        <div class="card">Pandas</div>
+        <div class="card">AWS (Basics)</div>
+    </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section dark reveal">
-        <h2>Projects</h2>
+<section id="experience" class="section reveal">
+    <h2>Work Experience</h2>
+    <div class="card">
+        <h3>Affiliate Executive – Mobtions</h3>
+        <p>Managed and optimized multiple affiliate campaigns across Tier-1 geographies, tracking key KPIs including installs, conversion rate, and ROI.
+           Analyzed campaign performance using data-driven approaches to improve traffic quality and scaling decisions.
+           Worked with tracking tools like Appsflyer, Singular, Apptrove, Affise, Adjust and attribution concepts relevant to performance marketing ecosystems.
+           Contributed to performance strategy discussions, improving campaign efficiency and delivery timelines.</p>
+    </div>
+    <div class="card">
+        <h3>ML Intern – Indusnet Techshu</h3>
+        <p>Developed and deployed machine learning models for real-time traffic analysis and predictive modeling.
+           Implemented data preprocessing pipelines to improve model accuracy and performance.
+           Collaborated with cross-functional teams to optimize model scalability in production environments.
+           Gained hands-on experience in computer vision workflows and model evaluation techniques.</p>
+    </div>
+</section>
 
-        <div class="project-card">
-            <h3>Analytics API</h3>
-            <p>
-                FastAPI + PostgreSQL backend system for user & event analytics.
-                Includes Docker deployment and modular architecture.
-            </p>
-        </div>
+<section id="projects" class="section dark reveal">
+    <h2>Projects</h2>
 
-        <div class="project-card">
-            <h3>Smart Compliance Assistant</h3>
-            <p>
-                RAG-based enterprise contract automation system using multimodal AI.
-            </p>
-        </div>
+    <div class="card">
+        <h3>Analytics API (FastAPI + SQL + Docker)</h3>
+        <p> Built a scalable backend API using FastAPI for user and event analytics.  Implemented CRUD operations with SQLAlchemy ORM.
+            Designed modular project architecture with routers and database separation.  Added input validation and error handling for secure API responses.
+            Containerized the application using Docker for production deployment. </p>
+    </div>
 
-    </section>
+    <div class="card">
+        <h3>Real-Time Traffic Density Estimation (YOLOv8)</h3>
+        <p>Implemented YOLOv8 Nano for real-time vehicle detection and traffic monitoring.
+           Built end-to-end computer vision pipeline for object detection and density estimation.  
+           Optimized inference performance for near real-time processing.</p>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section reveal">
-        <h2>Contact</h2>
-        <p>Email: aryaprakashdas815@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/arya-prakash-das</p>
-    </section>
+    <div class="card">
+        <h3>Predictive Maintenance System</h3>
+        <p>Developed machine learning models to predict equipment failure and reduce downtime.  
+           Performed feature engineering and data preprocessing to improve model performance.  
+           Evaluated multiple algorithms to select the optimal predictive model.
+</p>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Arya Prakash Das. All Rights Reserved.</p>
-    </footer>
+</section>
 
-    <!-- Correct JS path -->
-    <script src="script.js"></script>
+<section id="certifications" class="section reveal">
+    <h2>Certifications</h2>
+    <div class="grid">
+        <div class="card">AWS Cloud Technical Essentials</div>
+        <div class="card">HackerRank Problem Solving</div>
+        <div class="card">HackerRank SQL</div>
+        <div class="card">HackerRank JS</div>
+        <div class="card">Python Certification</div>
+    </div>
+</section>
+
+<section id="contact" class="section dark reveal">
+    <h2>Contact</h2>
+    <p>Email: aryaprakashdas815@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/arya-prakash-das</p>
+    <p>Phone: 7609029625</p>
+</section>
+
+<footer>
+    <p>© 2026 Arya Prakash Das</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
