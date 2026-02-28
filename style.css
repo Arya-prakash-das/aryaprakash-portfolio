@@ -41,7 +41,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 30px;
+    gap: 25px;
     list-style: none;
 }
 
@@ -63,7 +63,7 @@ nav a {
 }
 
 .hero h2 {
-    font-size: 48px;
+    font-size: 46px;
 }
 
 .typing {
@@ -81,6 +81,7 @@ nav a {
     color: #000;
     border-radius: 6px;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .social-icons {
@@ -107,16 +108,27 @@ nav a {
     background: var(--card);
 }
 
-/* CARDS */
+/* SKILLS */
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.skill-category h3 {
+    margin-bottom: 25px;
+    color: var(--accent);
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
 }
 
 .card {
-    padding: 25px;
-    border-radius: 12px;
+    padding: 20px;
+    border-radius: 10px;
     background: var(--card);
     transition: 0.3s;
 }
@@ -148,7 +160,7 @@ nav a {
 /* REVEAL */
 .reveal {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(40px);
     transition: 0.8s;
 }
 

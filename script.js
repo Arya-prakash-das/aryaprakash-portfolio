@@ -1,4 +1,3 @@
-// Typing Animation
 const roles = [
     "Digital Marketer",
     "Backend Developer",
@@ -8,33 +7,32 @@ const roles = [
 
 let index = 0;
 let charIndex = 0;
-let isDeleting = false;
+let deleting = false;
 
 function typeEffect() {
     const typing = document.querySelector(".typing");
-    const fullText = roles[index];
+    const text = roles[index];
 
-    if (!isDeleting) {
-        typing.textContent = fullText.substring(0, charIndex++);
-        if (charIndex > fullText.length) {
-            isDeleting = true;
+    if (!deleting) {
+        typing.textContent = text.substring(0, charIndex++);
+        if (charIndex > text.length) {
+            deleting = true;
             setTimeout(typeEffect, 1000);
             return;
         }
     } else {
-        typing.textContent = fullText.substring(0, charIndex--);
+        typing.textContent = text.substring(0, charIndex--);
         if (charIndex < 0) {
-            isDeleting = false;
+            deleting = false;
             index = (index + 1) % roles.length;
         }
     }
 
-    setTimeout(typeEffect, isDeleting ? 60 : 100);
+    setTimeout(typeEffect, deleting ? 60 : 100);
 }
 
 typeEffect();
 
-// Scroll Reveal
 function revealOnScroll() {
     document.querySelectorAll(".reveal").forEach(el => {
         if (el.getBoundingClientRect().top < window.innerHeight - 100) {
@@ -46,7 +44,6 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
-// Dark / Light Toggle
 document.querySelector(".toggle").addEventListener("click", () => {
     document.body.classList.toggle("light");
 });
